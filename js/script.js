@@ -15,7 +15,13 @@ bird.eat = function () {
   if (this.hungerScale === 0) {
     console.log(`${bird.name} is full cand can't eat more.`);
   } else {
-    this.hungerScale -= 0;
+    this.hungerScale -= 1;
     console.log(`Nom nom nom nom nom!`);
   }
 };
+
+bird.eat();
+console.log(bird.isHappy());
+
+bird.eat();
+console.log(bird.isHappy());
